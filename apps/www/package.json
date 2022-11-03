@@ -1,0 +1,36 @@
+{
+	"name": "www",
+	"description": "A web app using ReScript workspace pkgs",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"fmt": "prettier src --write"
+	},
+	"dependencies": {
+		"@ct/on-scroll": "workspace:^1.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.3.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.7.1",
+		"@types/react": "^18.0.17",
+		"@types/react-dom": "^18.0.6",
+		"@vanilla-extract/css": "^1.7.2",
+		"@vanilla-extract/vite-plugin": "^3.3.0",
+		"@vitejs/plugin-react": "^2.0.1",
+		"polished": "^4.2.2",
+		"typescript": "^4.7.4",
+		"vite": "^3.2.2"
+	},
+	"browserslist": [
+		"> 2%",
+		"not IE <= 11",
+		"not dead",
+		"no op_mini all"
+	]
+}

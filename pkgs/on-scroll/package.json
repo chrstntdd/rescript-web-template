@@ -1,0 +1,36 @@
+{
+	"name": "@ct/on-scroll",
+	"description": "A pub/sub function for listening to scroll without registering duplicate event handlers",
+	"version": "1.0.0",
+	"license": "MIT",
+	"type": "module",
+	"sideEffects": false,
+	"module": "./src/Main.bs.js",
+	"types": "./src/Main.gen.tsx",
+	"files": [
+		"./package.json",
+		"./src/Main.bs.js",
+		"./src/Main.gen.tsx"
+	],
+	"exports": {
+		".": {
+			"import": "./src/Main.bs.js"
+		},
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"fmt": "prettier src --write",
+		"re:build": "rescript build -with-deps",
+		"re:start": "rescript build -w",
+		"bundle": "vite build --mode production --ssr ./src/Main.bs.js"
+	},
+	"devDependencies": {
+		"gentype": "^4.5.0",
+		"typescript": "^4.7.3",
+		"vite": "^3.2.2"
+	},
+	"dependencies": {
+		"rescript": "^10.0.1",
+		"rescript-js-map": "^1.1.0"
+	}
+}

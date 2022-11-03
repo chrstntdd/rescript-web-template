@@ -1,0 +1,13 @@
+# Logs
+logs
+*.log
+pnpm-debug.log*
+
+node_modules
+dist
+*.local
+
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+coverage
